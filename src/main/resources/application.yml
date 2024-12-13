@@ -1,1 +1,10 @@
-spring.application.name=my-resource-server
+spring:
+  application:
+    name: my-resource-server
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8080/oauth2/jwks
+server:
+  port: 8081
